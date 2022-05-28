@@ -7,6 +7,13 @@
 #include <string>
 #include "MidPointCircle.h"
 #include "MidPointCircle.cpp"
+#include "PolarCircle.cpp"
+#include "PolarCircle.h"
+#include "IterativePolarCircle.h"
+#include "IterativePolarCircle.cpp"
+#include "ModifiedMidPointCircle.cpp"
+#include "ModifiedMidPointCircle.h"
+
 constexpr auto DRAW_BTN = 3;
 constexpr auto CLEAR_BTN = 4;
 
@@ -32,7 +39,7 @@ LRESULT WINAPI MyWndProc(HWND hwnd, UINT mcode, WPARAM wp, LPARAM lp)
             {
                 currentlyDrawing = true;
                 points.clear();
-                currShape = new MidPointCircle;
+                currShape = new ModifiedMidPointCircle;
                 numOfPoints = currShape->getMinNumOfPoints();
                 currNumOfPoints = 0;
                 return 0;
