@@ -57,7 +57,7 @@ LRESULT WINAPI MyWndProc(HWND hwnd, UINT mcode, WPARAM wp, LPARAM lp)
             if (currNumOfPoints == numOfPoints)
             {
                 currShape->setPoints(points);
-                currShape->draw(hdc, RGB(0,0,0));
+                currShape->draw(hdc, RGB(255,255,255));
                 currentlyDrawing = false;
                 //glFlush();
                 //SwapBuffers(hdc);

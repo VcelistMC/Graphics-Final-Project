@@ -13,7 +13,7 @@ public:
         int radius = Utils::distanceBetweenPoints(points[0], points[1]);
         draw(hdc, points[0].x, points[0].y, radius, c);
     }
-    virtual void draw(HDC hdc, int xc, int yc, int R, COLORREF color)
+    void draw(HDC hdc, int xc, int yc, int R, COLORREF color)
     {
         int x = 0, y = R;
         int d = 1 - R;
